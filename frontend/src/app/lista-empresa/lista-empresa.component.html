@@ -1,7 +1,7 @@
+<h1>Empresas Cadastradas</h1>
 
-<div>
-    <table border="1">
-        <caption>Empresas Cadastradas</caption>
+<div class="container">
+    <table class="table">
         <thead>
             <tr>
                 <th>id</th>
@@ -14,13 +14,13 @@
                 <td>{{empresa.id}}</td>
                 <td>{{empresa.nome}}</td>
                 <td>{{empresa.cnpj}}</td>
-                <button>Editar</button>
-                <button>Excluir</button>
+                <button class="btn btn-success" >Editar</button>
+                <button class="btn btn-danger">Excluir</button>
             </tr>
         </tbody>
     </table>
-</div>
 
-<div>
-    <button (click)=novaEmpresa()>Nova Empresa</button>
+
+
+    <button (click)=novaEmpresa() class="btn btn-primary">Nova Empresa</button>
 </div>
