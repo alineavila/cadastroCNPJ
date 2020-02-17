@@ -48,7 +48,6 @@ export class ListaEmpresaComponent implements OnInit {
   }
   editaEmpresa(){
     this.router.navigate(["formularioNovo"])
-
   }
 
 
