@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from "jquery";
+import { HelloWorldDataService } from '../service/data/hello-world-data.service';
 
 export class Empresa {
   constructor(
@@ -37,7 +38,9 @@ export class ListaEmpresaComponent implements OnInit {
 
   ]
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private service: HelloWorldDataService) { }
 
   ngOnInit(): void {
   }
@@ -49,6 +52,11 @@ export class ListaEmpresaComponent implements OnInit {
   editaEmpresa(){
     this.router.navigate(["formularioNovo"])
   }
+
+  getHelloWorld(){
+    console.log(this.service.executeHelloWorldBeanService());
+    //console.log("getHelloWorld");
+  } 
 
 
 }
