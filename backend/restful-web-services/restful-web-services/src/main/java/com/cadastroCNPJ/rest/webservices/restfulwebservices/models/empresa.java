@@ -25,6 +25,7 @@ public class empresa implements Serializable{
 	private String emailEmpresa;
 	private long CEP;
 	private String UF;
+	
 	public long getId() {
 		return id;
 	}
