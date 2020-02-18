@@ -1,9 +1,11 @@
 package com.cadastroCNPJ.rest.webservices.restfulwebservices.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,4 +37,17 @@ public class EmpresaResource {
 	public empresa salvaEmpresa(@RequestBody empresa empresa) {
 		return empresaRepository.save(empresa);
 	}
+	
+	@DeleteMapping("/empresa")
+	public void deletaEmpresa(@RequestBody empresa empresa) {
+		empresaRepository.delete(empresa);
+	}
+	
+	@PutMapping("/empresa")
+	public empresa atualizaEmpresa(@RequestBody empresa empresa) {
+		return empresaRepository.save(empresa);
+	}
+	
+	
+	
 }
