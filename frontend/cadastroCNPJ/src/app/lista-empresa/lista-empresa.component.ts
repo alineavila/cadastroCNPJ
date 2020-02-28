@@ -29,12 +29,12 @@ export class Empresa {
 export class ListaEmpresaComponent implements OnInit {
 
   empresas = [
-    new Empresa(1, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(2, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(3, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(4, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(5, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(6, "10000000000000", "pequeno porte", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date())
+    new Empresa(1, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
+    new Empresa(2, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
+    new Empresa(3, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
+    new Empresa(4, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
+    new Empresa(5, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
+    new Empresa(6, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date())
 
   ]
 

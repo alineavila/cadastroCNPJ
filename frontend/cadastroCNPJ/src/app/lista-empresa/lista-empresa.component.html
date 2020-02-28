@@ -2,6 +2,7 @@
 
 <div class="container">
 
+    <div><button (click)=novaEmpresa() class="btn btn-primary" style = "margin-bottom: 10px; margin-top: 20px;">Nova Empresa</button></div>
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
@@ -16,16 +17,12 @@
                 <td>{{empresa.id}}</td>
                 <td>{{empresa.nome}}</td>
                 <td>{{empresa.cnpj}}</td>
-                <button class="btn btn-success" (click)=editaEmpresa()>Editar</button>
-                <button class="btn btn-danger">Excluir</button>
+                <button class="btn btn-primary"  style= "margin-right: 5px; margin-top: 7px;" (click)=editaEmpresa()>Editar</button>
+                <button class="btn btn-danger" style="margin-top: 7px;">Excluir</button>
             </tr>
         </tbody>
     </table>
-
-
-    <button (click)=novaEmpresa() class="btn btn-primary">Nova Empresa</button>
 </div>
-<br><br>
 <div class="container">
     Clique para chamar um método no backend
     <br>
