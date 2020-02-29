@@ -13,6 +13,10 @@ export class FormEmpresaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  listaEmpresa(){
+    this.router.navigate([""])
+
+  }
 
 
 }

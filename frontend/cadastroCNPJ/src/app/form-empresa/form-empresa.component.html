@@ -1,36 +1,69 @@
 <h1>Nova Empresa</h1>
-<div class="container">
-<form>
-    <div class="form-group">
-      <label for="cnpj">CNPJ</label>
-      <input class="form-control" id="cnpj" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="porte">Tipo da Empresa</label>
-      <select class="form-control" id="porte">
-        <option>Pequeno Porte</option>
-        <option>Médio Porte</option>
-        <option>Grande Porte</option>
-      </select>
-    </div>
-    <div class="form-group">
-        <label for="nome">Nome da Empresa</label>
-        <input class="form-control" id="nome" placeholder="">
-    </div>
-    <div class="form-group">
-        <label for="nome">Razão Social</label>
-        <input class="form-control" id="nome" placeholder="">
-    </div>
-    <div class="form-group">
-        <label for="contato">Contato</label>
-        <input class="form-control" id="contato" placeholder="">
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input class="form-control" type="email" id="email" placeholder="exemplo@email.com">
-    </div>
-  </form>
-  <button class="btn, btn-success">Cadastrar</button>
-</div>
 
-    
+<div class="col-xs-4">
+  <div class="container">
+    <form class>
+      <div class="row justify-content-center">
+        <div class="form-group col-md-6">
+          <label for="cnpj" class="obrigatorio">CNPJ</label>
+          <input class="form-control" id="cnpj" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="tipoEmpresa" class="obrigatorio">Tipo da Empresa</label>
+          <select class="form-control" id="tipoEmpresa">
+            <option>Matriz</option>
+            <option>Filial</option>
+          </select>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="form-group col-md-6">
+          <label for="nome" class="obrigatorio">Nome da Empresa</label>
+          <input class="form-control" id="nome" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="nome" class="obrigatorio">Razão Social</label>
+          <input class="form-control" id="nome" placeholder="">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="form-group col-md-6">
+          <label for="contato" class="obrigatorio">Contato</label>
+          <input class="form-control" id="contato" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email" class="obrigatorio">Email</label>
+          <input class="form-control" type="email" id="email" placeholder="exemplo@email.com">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="form-group col-md-6">
+          <label for="cep" class="obrigatorio">CEP</label>
+          <input class="form-control" id="cep" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="estado" class="obrigatorio">Estado</label>
+          <input class="form-control" id="estado" placeholder="">
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="form-group col-md-6">
+          <label for="logradouro" class="obrigatorio">Logradouro</label>
+          <input class="form-control" id="logradouro" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="complemento">Complemento</label>
+          <input class="form-control" id="complemento" placeholder="">
+        </div>
+      </div>
+
+
+    </form>
+    <button class="btn, btn-success" style= "margin-right: 15px;" >Cadastrar</button>
+    <button class="btn, btn-info" (click)=listaEmpresa()>Lista de Empresas</button>
+  </div>
+
+</div>
