@@ -8,7 +8,7 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.aline</groupId>
+	<groupId>br.com.aline</groupId>
 	<artifactId>cadastroCnpj</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cadastroCnpj</name>

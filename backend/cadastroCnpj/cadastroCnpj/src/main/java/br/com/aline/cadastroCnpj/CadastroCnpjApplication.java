@@ -1,4 +1,4 @@
-package com.aline.cadastroCnpj;
+package br.com.aline.cadastroCnpj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.aline.cadastroCnpj;
+package br.com.aline.cadastroCnpj;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
