@@ -11,7 +11,7 @@ export class EmpresaService {
 
   constructor(private http:HttpClient) { }
 
-  Url = 'http://localhost:8080/empresas';
+  Url = 'http://localhost:8080/api/empresas';
 
   getEmpresas(){
     return this.http.get<Empresa[]>(this.Url);

@@ -1,13 +1,13 @@
-package com.cadastroCNPJ.rest.webservices.restfulwebservices;
+package com.aline.cadastroCnpj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestfulWebServicesApplication {
+public class CadastroCnpjApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestfulWebServicesApplication.class, args);
+		SpringApplication.run(CadastroCnpjApplication.class, args);
 	}
 
 }
