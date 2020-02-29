@@ -13,7 +13,7 @@ export class Empresa {
     public contato: number, 
     public email: string, 
     public cep: number,
-    public uf: string, 
+    public uf: string,  
     public data: Date
 
   ){
