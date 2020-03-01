@@ -7,8 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-@Entity(name = "tb_empresa")
 
+@Entity(name = "tb_empresa")
 public class Empresa {
 	
 	@Id
@@ -34,13 +34,13 @@ public class Empresa {
 	private String contato;
 	
 	@Column(nullable = false)
-	private Long cep;
+	private String cep;
 	
 	@Column(nullable = false)
 	private String uf;
 	
 
-	public Empresa(String cnpj, String tipo, String nome, String razao_social, String email, String contato, Long cep,
+	public Empresa(String cnpj, String tipo, String nome, String razao_social, String email, String contato, String cep,
 			String uf) {
 		super();
 		this.cnpj = cnpj;
@@ -124,12 +124,12 @@ public class Empresa {
 	}
 
 
-	public Long getCep() {
+	public String getCep() {
 		return cep;
 	}
 
 
-	public void setCep(Long cep) {
+	public void setCep(String cep) {
 		this.cep = cep;
 	}
 

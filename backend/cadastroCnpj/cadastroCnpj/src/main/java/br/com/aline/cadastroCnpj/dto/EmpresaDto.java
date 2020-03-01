@@ -1,26 +1,25 @@
 package br.com.aline.cadastroCnpj.dto;
 
-import javax.validation.constraints.NotBlank;
 
 public class EmpresaDto {
 
-	@NotBlank
+	
 	private Long id;
-	@NotBlank
+	
 	private String cnpj;
-	@NotBlank
+	
 	private String tipo;
-	@NotBlank
+	
 	private String nome;
-	@NotBlank
+	
 	private String razao_social;
-	@NotBlank
+	
 	private String email;
-	@NotBlank
+	
 	private String contato;
-	@NotBlank
+	
 	private Long cep;
-	@NotBlank
+	
 	private String uf;
 	
 
