@@ -58,12 +58,7 @@ export class ListaEmpresaComponent implements OnInit {
     this.router.navigate(["formularioNovo"])
   }
 
-  getHelloWorld(){
-    console.log(this.service.executeHelloWorldBeanService());
-    this.service.executeHelloWorldBeanService().subscribe();
-    //console.log("getHelloWorld");
-  } 
-  
+
   
 
 }
