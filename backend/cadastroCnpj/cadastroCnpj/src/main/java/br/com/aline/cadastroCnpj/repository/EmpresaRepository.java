@@ -9,9 +9,7 @@ import br.com.aline.cadastroCnpj.entity.Empresa;
 
 @Repository
 public interface EmpresaRepository  extends JpaRepository<Empresa, Long> {
-	Optional<Empresa> findByNome(String nome);
-	boolean existsByNome(String nome);
-	
+
 	
 
 }

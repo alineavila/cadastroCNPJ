@@ -27,9 +27,6 @@ public class EmpresaService {
 		
 	}
 	
-	public Optional<Empresa> getByNome(String nome){
-		return empresaRepository.findByNome(nome);
-	}
 	
 	public void save(Empresa empresa) {
 		empresaRepository.save(empresa);
@@ -43,10 +40,6 @@ public class EmpresaService {
 	
 	public boolean existsById(long id) {
 		return empresaRepository.existsById(id);
-	}
-	
-	public boolean existsByNome(String nome) {
-		return empresaRepository.existsByNome(nome);
 	}
 	
 

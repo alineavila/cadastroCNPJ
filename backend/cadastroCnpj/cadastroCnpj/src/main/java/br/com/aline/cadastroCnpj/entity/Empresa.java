@@ -9,7 +9,7 @@ import javax.persistence.Id;
 
 
 @Entity(name = "tb_empresa")
-public class Empresa {
+public class Empresa{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,10 +27,10 @@ public class Empresa {
 	@Column(nullable = false)
 	private String razao_social;
 	
-	@Column(unique = true, nullable = false)
+	@Column(nullable = false)
 	private String email;
 	
-	@Column(unique = true, nullable = false)
+	@Column(nullable = false)
 	private String contato;
 	
 	@Column(nullable = false)
@@ -40,6 +40,12 @@ public class Empresa {
 	private String uf;
 	
 
+
+	
+	public Empresa() {
+		
+	}
+	
 	public Empresa(String cnpj, String tipo, String nome, String razao_social, String email, String contato, String cep,
 			String uf) {
 		super();
@@ -52,7 +58,8 @@ public class Empresa {
 		this.cep = cep;
 		this.uf = uf;
 	}
-
+	
+	
 
 	public Long getId() {
 		return id;
