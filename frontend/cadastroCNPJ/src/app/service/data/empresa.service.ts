@@ -8,12 +8,12 @@ import { Empresa } from 'src/app/lista-empresa/lista-empresa.component';
 
 export class EmpresaService {
 
-
+  Url = 'http://localhost:8080/empresa/';
   constructor(private http:HttpClient) { }
 
-  Url = 'http://localhost:8080/api/empresas';
+  
 
   getEmpresas(){
-    return this.http.get<Empresa[]>(this.Url);
+    return this.http.get<Empresa[]>(this.Url + 'lista');
   }
 }

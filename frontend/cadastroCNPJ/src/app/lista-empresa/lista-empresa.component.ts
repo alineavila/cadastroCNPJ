@@ -2,23 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from "jquery";
 import { HelloWorldDataService } from '../service/data/hello-world-data.service';
+import { EmpresaService } from '../service/data/empresa.service';
 
 export class Empresa {
-  constructor(
-    public id: number,
-    public cnpj: string,
-    public tipo: string,  
-    public nome: string,
-    public razaoSocial: string,
-    public contato: number, 
-    public email: string, 
-    public cep: number,
-    public uf: string,  
-    public data: Date
-
-  ){
-
-  }
+    public id: number;
+    public cnpj: string;
+    public tipo: string;  
+    public nome: string;
+    public razaoSocial: string;
+    public contato: number;
+    public email: string;
+    public cep: number;
+    public uf: string;
 }
 
 @Component({
@@ -26,23 +21,33 @@ export class Empresa {
   templateUrl: './lista-empresa.component.html',
   styleUrls: ['./lista-empresa.component.css']
 })
+
 export class ListaEmpresaComponent implements OnInit {
 
-  empresas = [
-    new Empresa(1, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(2, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(3, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(4, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(5, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date()),
-    new Empresa(6, "10000000000000", "matriz", "Magazine Luiza", "clara Magazine Luiza S/A", 61982191870, "magazine@magazine.com", 1000000000, "df", new Date())
+  empresas: Empresa[]=[];
 
-  ]
+
 
   constructor(
+    private empresaService: EmpresaService,
     private router: Router,
     private service: HelloWorldDataService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.listaEmpresas();
+  }
+
+
+  listaEmpresas(): void{
+    this.empresaService.getEmpresas().subscribe(
+      data => {
+        this.empresas = data;
+      },
+      err => {
+        console.log(err);
+      }
+    )
+
   }
 
   novaEmpresa(){
@@ -58,6 +63,7 @@ export class ListaEmpresaComponent implements OnInit {
     this.service.executeHelloWorldBeanService().subscribe();
     //console.log("getHelloWorld");
   } 
-
+  
+  
 
 }
