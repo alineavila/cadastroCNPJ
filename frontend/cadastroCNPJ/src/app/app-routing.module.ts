@@ -8,6 +8,7 @@ import { ErroComponent } from './erro/erro.component';
 const routes: Routes = [
   {path: "", component: ListaEmpresaComponent}, // rota padrão da aplicação
   {path: "formularioNovo", component: FormEmpresaComponent},
+  {path: "editar/:id", component: FormEmpresaComponent},
   {path: "**", component: ErroComponent}
 
 ];
