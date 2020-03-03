@@ -2,15 +2,15 @@
 
 <div class="col-xs-4">
   <div class="container">
-    <form class>
+    <form>
       <div class="row justify-content-center">
         <div class="form-group col-md-6">
           <label for="cnpj" class="obrigatorio">CNPJ</label>
-          <input class="form-control" id="cnpj" placeholder="">
+          <input type="text" class="form-control" id="cnpj" name="cnpj" [(ngModel)]="cnpj">
         </div>
         <div class="form-group col-md-6">
           <label for="tipoEmpresa" class="obrigatorio">Tipo da Empresa</label>
-          <select class="form-control" id="tipoEmpresa">
+          <select class="form-control" id="tipoEmpresa" [(ngModel)]="tipo">
             <option>Matriz</option>
             <option>Filial</option>
           </select>
@@ -19,33 +19,33 @@
       <div class="row justify-content-center">
         <div class="form-group col-md-6">
           <label for="nome" class="obrigatorio">Nome da Empresa</label>
-          <input class="form-control" id="nome" placeholder="">
+          <input class="form-control" id="nome" [(ngModel)]="nome">
         </div>
         <div class="form-group col-md-6">
           <label for="nome" class="obrigatorio">Razão Social</label>
-          <input class="form-control" id="nome" placeholder="">
+          <input class="form-control" id="nome" [(ngModel)]="razaoSocial">
         </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="form-group col-md-6">
           <label for="contato" class="obrigatorio">Contato</label>
-          <input class="form-control" id="contato" placeholder="">
+          <input class="form-control" id="contato" [(ngModel)]="contato">
         </div>
         <div class="form-group col-md-6">
           <label for="email" class="obrigatorio">Email</label>
-          <input class="form-control" type="email" id="email" placeholder="exemplo@email.com">
+          <input class="form-control" type="email" id="email" placeholder="exemplo@email.com" [(ngModel)]="email">
         </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="form-group col-md-6">
           <label for="cep" class="obrigatorio">CEP</label>
-          <input class="form-control" id="cep" placeholder="">
+          <input class="form-control" id="cep" [(ngModel)]="cep">
         </div>
         <div class="form-group col-md-6">
           <label for="estado" class="obrigatorio">Estado</label>
-          <input class="form-control" id="estado" placeholder="">
+          <input class="form-control" id="estado" [(ngModel)]="uf">
         </div>
       </div>
 
@@ -60,10 +60,10 @@
         </div>
       </div>
 
-
+      <button class="btn, btn-success" style= "margin-right: 15px;" (click)="novaEmpresa()">Cadastrar</button>
+      <button class="btn, btn-info" (click)=listaEmpresa()>Lista de Empresas</button>
     </form>
-    <button class="btn, btn-success" style= "margin-right: 15px;" (click)=novaEmpresa()>Cadastrar</button>
-    <button class="btn, btn-info" (click)=listaEmpresa()>Lista de Empresas</button>
-  </div>
 
 </div>
+
+</div> 
